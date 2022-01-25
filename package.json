@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Protractor tests for the Login",
+  "main": "protractor.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm run ci-test -- --baseUrl=https://login.dev.qa-experience.com",
+    "ci-test": "protractor protractor.conf.js --cucumberOpts.tags=~@ignore --cucumberOpts.tags=@test"
+  },
+  "author": "Agalya Chinnaraj",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.2",
+    "@types/chai": "^4.2.0",
+    "@types/node": "^12.11.1",
+    "chai": "^4.2.0",
+    "cucumber-html-reporter": "^5.5.0",
+    "cucumber-tsflow": "^3.2.0",
+    "protractor": "^7.0.0",
+    "protractor-cucumber-framework": "^6.1.3",
+    "save": "^2.4.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^4.3.5"
+  }
+}
